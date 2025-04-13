@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Computer, Car, Film, ChevronRight } from "lucide-react";
+import { Computer, Cookie, Film, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Programs = () => {
@@ -19,16 +19,16 @@ const Programs = () => {
       ]
     },
     {
-      id: "otomatif",
-      title: "Otomatif",
-      icon: Car,
+      id: "tata-boga",
+      title: "Tata Boga",
+      icon: Cookie,
       color: "bg-orange-500",
-      description: "Program keahlian yang mempelajari teknik kendaraan ringan, mesin, kelistrikan, dan sistem otomasi kendaraan.",
+      description: "Program keahlian yang mempelajari pengolahan makanan, pastry, dan manajemen usaha kuliner.",
       features: [
-        "Perawatan dan perbaikan mesin kendaraan",
-        "Sistem kelistrikan otomotif",
-        "Teknologi sistem kemudi dan rem",
-        "Diagnosa dan perbaikan kendaraan modern"
+        "Pengolahan makanan Indonesia dan internasional",
+        "Pembuatan kue dan roti",
+        "Food styling dan presentasi",
+        "Manajemen usaha kuliner"
       ]
     },
     {
@@ -89,7 +89,7 @@ const Programs = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-school-blue text-white hover:bg-school-blue">
+          <Button className="bg-school-blue hover:bg-opacity-90 text-white">
             <Link to="/program">Lihat Semua Program Keahlian</Link>
           </Button>
         </div>

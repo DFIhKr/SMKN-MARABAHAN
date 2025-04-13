@@ -37,7 +37,7 @@ const Navbar = () => {
       link: '/program',
       dropdown: [
         { label: 'Teknik Komputer & Jaringan', link: '/program/tkj' },
-        { label: 'Otomatif', link: '/program/otomatif' },
+        { label: 'Tata Boga', link: '/program/tata-boga' },
         { label: 'Multimedia', link: '/program/multimedia' },
       ] 
     },
@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/lovable-uploads/af3aa59e-f20e-426a-918b-ab349e59eb12.png" alt="SMKN 2 Marabahan" className="w-10 h-10" />
+            <img src="/placeholder.svg" alt="SMKN 2 Marabahan" className="w-10 h-10" />
             <div>
               <h1 className="text-xl font-bold text-school-blue">SMKN 2 Marabahan</h1>
               <p className="text-xs text-gray-600">Siap, Mandiri, Kreatif</p>
@@ -63,12 +63,12 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <div key={index} className="relative group">
                 {item.dropdown ? (
-                  <button className={`px-3 py-2 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-school-teal flex items-center gap-1`}>
+                  <button className="px-3 py-2 text-gray-700 hover:text-school-teal flex items-center gap-1">
                     {item.label}
                     <ChevronDown size={16} />
                   </button>
                 ) : (
-                  <Link to={item.link} className={`px-3 py-2 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-school-teal`}>
+                  <Link to={item.link} className="px-3 py-2 text-gray-700 hover:text-school-teal">
                     {item.label}
                   </Link>
                 )}
@@ -95,7 +95,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <button 
-            className={`lg:hidden ${isScrolled ? 'text-gray-700' : 'text-white'} focus:outline-none`}
+            className="lg:hidden text-gray-700 focus:outline-none"
             onClick={toggleMenu}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

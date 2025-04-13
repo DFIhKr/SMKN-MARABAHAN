@@ -10,17 +10,14 @@ const Hero = () => {
       
       <div className="container-custom relative z-10 flex flex-col h-[calc(100vh-6rem)] justify-center">
         <div className="max-w-3xl animate-slide-up">
-          <div className="flex items-center gap-4 mb-6">
-            <img src="/lovable-uploads/af3aa59e-f20e-426a-918b-ab349e59eb12.png" alt="SMKN 2 Marabahan" className="w-16 h-16" />
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-0 leading-tight">
-              <span className="text-school-teal">SMKN 2 Marabahan</span>
-            </h1>
-          </div>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+            Selamat Datang di <span className="text-school-teal">SMKN 2 Marabahan</span>
+          </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8">
             Membentuk generasi unggul yang siap menghadapi tantangan global melalui pendidikan kejuruan berkualitas
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-school-teal text-white hover:bg-school-teal py-6 px-8 text-lg">
+            <Button className="bg-school-teal hover:bg-opacity-90 text-white py-6 px-8 text-lg">
               PPDB Online
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-school-blue py-6 px-8 text-lg">
