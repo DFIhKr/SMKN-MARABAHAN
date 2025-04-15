@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -37,7 +36,7 @@ const Navbar = () => {
       link: '/program',
       dropdown: [
         { label: 'Teknik Komputer & Jaringan', link: '/program/tkj' },
-        { label: 'Tata Boga', link: '/program/tata-boga' },
+        { label: 'Otomotif', link: '/program/otomotif' },
         { label: 'Multimedia', link: '/program/multimedia' },
       ] 
     },
@@ -50,8 +49,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container-custom">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2">
-            <img src="/placeholder.svg" alt="SMKN 2 Marabahan" className="w-10 h-10" />
+          <Link to="/" className="flex items-center gap-2 animate-fade-in opacity-0">
+            <img src="/logo.png" alt="SMKN 2 Marabahan" className="w-10 h-10" />
             <div>
               <h1 className="text-xl font-bold text-school-blue">SMKN 2 Marabahan</h1>
               <p className="text-xs text-gray-600">Siap, Mandiri, Kreatif</p>
@@ -63,12 +62,12 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <div key={index} className="relative group">
                 {item.dropdown ? (
-                  <button className="px-3 py-2 text-gray-700 hover:text-school-teal flex items-center gap-1">
+                  <button className={`px-3 py-2 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-school-teal flex items-center gap-1`}>
                     {item.label}
                     <ChevronDown size={16} />
                   </button>
                 ) : (
-                  <Link to={item.link} className="px-3 py-2 text-gray-700 hover:text-school-teal">
+                  <Link to={item.link} className={`px-3 py-2 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-school-teal`}>
                     {item.label}
                   </Link>
                 )}
@@ -90,7 +89,7 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            <Button className="ml-3 bg-school-teal hover:bg-school-blue">PPDB Online</Button>
+            <Button className="ml-3 bg-school-teal text-white hover:bg-school-blue">PPDB Online</Button>
           </div>
 
           {/* Mobile menu button */}

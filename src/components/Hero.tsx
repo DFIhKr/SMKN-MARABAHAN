@@ -9,15 +9,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-school-blue to-transparent"></div>
       
       <div className="container-custom relative z-10 flex flex-col h-[calc(100vh-6rem)] justify-center">
-        <div className="max-w-3xl animate-slide-up">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+        <div className="max-w-3xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight animate-slide-up">
             Selamat Datang di <span className="text-school-teal">SMKN 2 Marabahan</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 animate-slide-up">
             Membentuk generasi unggul yang siap menghadapi tantangan global melalui pendidikan kejuruan berkualitas
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-school-teal hover:bg-opacity-90 text-white py-6 px-8 text-lg">
+          <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
+            <Button className="bg-school-teal text-white py-6 px-8 text-lg hover:bg-opacity-90">
               PPDB Online
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-school-blue py-6 px-8 text-lg">

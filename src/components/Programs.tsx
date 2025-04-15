@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Computer, Cookie, Film, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -19,16 +18,16 @@ const Programs = () => {
       ]
     },
     {
-      id: "tata-boga",
-      title: "Tata Boga",
+      id: "otomotif",
+      title: "Otomotif",
       icon: Cookie,
       color: "bg-orange-500",
-      description: "Program keahlian yang mempelajari pengolahan makanan, pastry, dan manajemen usaha kuliner.",
+      description: "Program keahlian yang mempelajari tentang teknologi kendaraan, sistem pemeliharaan, dan perbaikan otomotif.",
       features: [
-        "Pengolahan makanan Indonesia dan internasional",
-        "Pembuatan kue dan roti",
-        "Food styling dan presentasi",
-        "Manajemen usaha kuliner"
+        "Teknologi kendaraan ringan",
+        "Sistem kelistrikan otomotif",
+        "Perawatan dan perbaikan mesin",
+        "Manajemen bengkel otomotif"
       ]
     },
     {
