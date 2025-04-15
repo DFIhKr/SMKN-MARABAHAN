@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
@@ -48,8 +47,11 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          <div className="relative bg-gray-50 rounded-2xl p-8 md:p-12 shadow-md">
+        <div className="relative max-w-4xl mx-auto overflow-hidden">
+          <div 
+            className="relative bg-gray-50 rounded-2xl p-8 md:p-12 shadow-md transition-all duration-500 transform"
+            style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+          >
             <div className="absolute -top-6 left-12 bg-school-teal rounded-full p-3">
               <Quote className="text-white" size={24} />
             </div>
@@ -66,7 +68,7 @@ const Testimonials = () => {
               </div>
               
               <div className="md:col-span-2">
-                <blockquote className="text-gray-700 italic mb-6">
+                <blockquote className="text-gray-700 italic mb-6 transition-all duration-300 transform">
                   "{testimonials[activeIndex].quote}"
                 </blockquote>
                 <div>

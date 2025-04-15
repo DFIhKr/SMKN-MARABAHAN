@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -49,11 +50,11 @@ const Navbar = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container-custom">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2 animate-fade-in opacity-0">
+          <Link to="/" className="flex items-center gap-2 animate-fade-in">
             <img src="/logo.png" alt="SMKN 2 Marabahan" className="w-10 h-10" />
             <div>
-              <h1 className="text-xl font-bold text-school-blue">SMKN 2 Marabahan</h1>
-              <p className="text-xs text-gray-600">Siap, Mandiri, Kreatif</p>
+              <h1 className={`text-xl font-bold ${isScrolled ? 'text-school-blue' : 'text-white'}`}>SMKN 2 Marabahan</h1>
+              <p className={`text-xs ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>Siap, Mandiri, Kreatif</p>
             </div>
           </Link>
 

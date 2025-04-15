@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { Computer, Cookie, Film, ChevronRight } from "lucide-react";
+import { Computer, Car, Film, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Programs = () => {
@@ -20,7 +21,7 @@ const Programs = () => {
     {
       id: "otomotif",
       title: "Otomotif",
-      icon: Cookie,
+      icon: Car,
       color: "bg-orange-500",
       description: "Program keahlian yang mempelajari tentang teknologi kendaraan, sistem pemeliharaan, dan perbaikan otomotif.",
       features: [
