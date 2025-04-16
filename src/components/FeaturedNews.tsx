@@ -10,15 +10,15 @@ const FeaturedNews = () => {
       id: 1,
       title: "SMKN 2 Marabahan Raih Juara Lomba Kompetensi Siswa Tingkat Provinsi",
       excerpt: "Tim SMK Negeri 2 Marabahan berhasil meraih juara pertama dalam ajang Lomba Kompetensi Siswa (LKS) tingkat Provinsi Kalimantan Selatan dalam bidang jaringan komputer.",
-      image: "/placeholder.svg",
-      date: "12 Apr 2025",
+      image: "/lks.jpg",
+      date: "9 Juli 2024",
       category: "Prestasi"
     },
     {
       id: 2,
-      title: "Kunjungan Industri ke PT. Telkom Indonesia",
+      title: "Kegiatan Safety Riding di SMKN 2 Marabahan",
       excerpt: "Siswa jurusan Teknik Komputer dan Jaringan melakukan kunjungan industri ke PT. Telkom Indonesia untuk mempelajari teknologi jaringan terkini.",
-      image: "/placeholder.svg",
+      image: "/image.png",
       date: "8 Apr 2025",
       category: "Kegiatan"
     },

@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-school-blue via-blue-900 to-school-blue pt-24">
-      <div className="absolute inset-0 bg-[url('/placeholder.svg')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute bg-cover bg-center opacity-10"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-school-blue to-transparent"></div>
       
       <div className="container-custom relative z-10 flex flex-col h-[calc(100vh-6rem)] justify-center">
@@ -20,7 +20,7 @@ const Hero = () => {
             <Button className="bg-school-teal text-white py-6 px-8 text-lg hover:bg-opacity-90">
               PPDB Online
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-school-blue py-6 px-8 text-lg">
+            <Button variant="outline" className="border-white bg-transparent text-white hover:bg-white hover:text-school-blue py-6 px-8 text-lg">
               Jelajahi Program <ChevronRight className="ml-2" />
             </Button>
           </div>

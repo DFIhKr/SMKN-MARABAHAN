@@ -34,7 +34,7 @@ const Footer = () => {
           {/* School Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <img src="/placeholder.svg" alt="SMKN 2 Marabahan" className="w-10 h-10" />
+              <img src="https://tse3.mm.bing.net/th?id=OIP.zNkb3uibb95vuQXrVceUrwHaHi&pid=Api&P=0&h=220" alt="SMKN 2 Marabahan" className="rounded-lg w-10 h-10" />
               <div>
                 <h2 className="font-bold text-white text-xl">SMKN 2 Marabahan</h2>
                 <p className="text-xs text-gray-400">Siap, Mandiri, Kreatif</p>

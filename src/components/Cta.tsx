@@ -29,7 +29,7 @@ const Cta = () => {
   return (
     <section className="py-20 relative">
       <div className="absolute inset-0 bg-school-blue opacity-90 z-0"></div>
-      <div className="absolute inset-0 bg-[url('/placeholder.svg')] bg-cover bg-center mix-blend-overlay opacity-20 z-0"></div>
+      <div className="absolute inset-0 bg-[url('/')] bg-cover bg-center mix-blend-overlay opacity-20 z-0"></div>
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -43,7 +43,7 @@ const Cta = () => {
               <Button className="bg-white text-school-blue hover:bg-gray-100 font-medium">
                 PPDB Online
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-school-blue">
+              <Button variant="outline" className="bg-school-blue border-white text-white hover:bg-white hover:text-school-blue">
                 Hubungi Kami
               </Button>
             </div>

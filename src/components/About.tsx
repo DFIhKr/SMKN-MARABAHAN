@@ -20,7 +20,7 @@ const About = () => {
           <div className="relative">
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/placeholder.svg" 
+                src="./smk.jpg" 
                 alt="SMKN 2 Marabahan" 
                 className="w-full h-full object-cover aspect-[4/3]"
               />
